@@ -13,7 +13,7 @@ import useSound from 'use-sound';
 const App = () => {
   const [showApp, setShowApp] = useState(false);
   const [booting, setBooting] = useState(false);
-  const [rebootSound] = useSound("./assets/reboot.mp3");
+  const [rebootSound] = useSound("/assets/reboot.mp3");
   const [welcomeSound] = useSound("/sounds/welcome.mp3");
   const [tickSound] = useSound("/sounds/tick.mp3");
 
@@ -45,7 +45,7 @@ const App = () => {
     color: "#ddd",
     fontFamily: "Courier New, monospace", // Old font
     fontSize: "1.3rem", // Larger font
-    backgroundImage: "url('src/assets/6397025.jpg')", // Old image
+    backgroundImage: "url('/assets/6397025.jpg')", // Old image
     backgroundSize: "cover",
     backgroundPosition: "center",
     overflow: "hidden",
