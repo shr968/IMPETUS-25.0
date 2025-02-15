@@ -13,7 +13,7 @@ import useSound from 'use-sound';
 const App = () => {
   const [showApp, setShowApp] = useState(false);
   const [booting, setBooting] = useState(false);
-  const [rebootSound] = useSound("src/assets/reboot.mp3");
+  const [rebootSound] = useSound("./assets/reboot.mp3");
   const [welcomeSound] = useSound("/sounds/welcome.mp3");
   const [tickSound] = useSound("/sounds/tick.mp3");
 
