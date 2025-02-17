@@ -9,6 +9,10 @@ import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 import { motion } from "framer-motion";
 import useSound from 'use-sound';
+import Stats from "./components/Stats"
+import Events from "./components/Events"
+import Contact from "./components/Contact"
+import Gallery from "./components/Gallery"
 
 const App = () => {
   const [showApp, setShowApp] = useState(false);
@@ -45,12 +49,22 @@ const App = () => {
     color: "#ddd",
     fontFamily: "Courier New, monospace", // Old font
     fontSize: "1.3rem", // Larger font
-    backgroundImage: "url('/assets/6397025.jpg')", // Old image
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundImage: "url('/31.jpg')", // Background image from the public folder
+    backgroundSize: "cover", // Ensure the image covers the entire section
+    backgroundPosition: "center", // Center the background image
+    backgroundRepeat: "no-repeat", // Prevent the image from repeating
     overflow: "hidden",
   };
-
+  const backgroundOverlay = {
+    content: '""',
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(0, 0, 0, 0.4)", // Black overlay with opacity (0.4)
+    zIndex: -1, // Ensure the overlay stays behind the content
+  };
   const newThemeStyles = {
     backgroundColor: "#111",
     color: "#eee",
@@ -71,38 +85,69 @@ const App = () => {
         >
           {!booting ? (
             <>
-              <motion.h1
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-                style={{
-                  fontSize: "2.5rem",
-                  fontWeight: "bold",
-                  marginBottom: "1rem",
-                  textShadow: "2px 2px 4px #000000",
-                }}
-              >
-                IEEE UVCE 25 Years
-              </motion.h1>
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                style={{
-                  fontSize: "1.5rem",
-                  marginBottom: "1rem",
-                  fontStyle: "italic",
-                  color: "#aaa",
-                }}
-              >
-                Legacy Rebooted - Silver Jubilee
-              </motion.h2>
+ <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  style={{
+    position: "absolute",  // Position it above the heading
+    top: "10%",            // Adjusted to go further above the heading
+    left: "50%",
+    transform: "translateX(-50%)",
+    width: "500px",        // Set the width of the image
+    height: "auto",       // Set the height of the image
+    borderRadius: "50%",   // Makes the image rounded
+    objectFit: "cover"   // Ensures the image covers the container without distortion
+  }}
+>
+  <img src="/IEEE-Logo.png" alt="Logo" />
+</motion.div>
+
+{/* Heading Text */}
+<motion.h1
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  style={{
+    fontSize: "2.5rem",
+    fontWeight: "bold",
+    marginBottom: "1rem",
+    marginTop: "7rem",
+    textShadow: "2px 2px 4px #000000",
+    textAlign: "center",
+    width: "100%",
+    display: "block",
+    lineHeight: "1.5", // Adjust the line-height here
+  }}
+>
+  25 Years of IEEE UVCE
+</motion.h1>
+
+
+
+<motion.h2
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.5 }}
+  style={{
+    fontSize: "1.5rem",
+    marginBottom: "1rem",
+    fontStyle: "italic",
+    color: "#aaa",
+    textAlign: "center", // Ensures it is centered
+    width: "100%",
+    display: "block",
+    lineHeight: "1.8", // Increase space between lines on mobile, if it wraps
+  }}
+>
+  Legacy Rebooted
+</motion.h2>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 style={{
                   padding: "0.75rem 1.5rem",
-                  backgroundColor: "#333",
+                  backgroundColor: "#6A0DAD", // Purple color for the button
                   color: "#fff",
                   borderRadius: "0.5rem",
                   fontSize: "1.2rem",
@@ -196,6 +241,10 @@ const App = () => {
           <Header />
           <Hero />
           <Roadmap />
+          <Stats />
+          <Events />
+          <Gallery />
+          <Contact />
           <Footer />
         </motion.div>
       )}
