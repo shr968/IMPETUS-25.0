@@ -18,8 +18,23 @@ const App = () => {
   const [showApp, setShowApp] = useState(false);
   const [booting, setBooting] = useState(false);
   const [rebootSound] = useSound("/reboot.mp3");
+  const [mainSound]=useSound("/main.mp3");
   const [welcomeSound] = useSound("/sounds/welcome.mp3");
   const [tickSound] = useSound("/sounds/tick.mp3");
+  useEffect(() => {
+    mainSound(); // Play main sound when component mounts
+  }, [mainSound]);
+<video
+  autoPlay
+  muted
+  playsInline
+  style={{ display: "none" }}
+  onPlay={() => {
+    mainSound();  // Play sound when the video starts
+  }}
+>
+  <source src="/silent.mp4" type="video/mp4" />
+</video>
 
   const [initializationComplete, setInitializationComplete] = useState(false);
   const [coreSystemsLoaded, setCoreSystemsLoaded] = useState(false);
@@ -41,7 +56,7 @@ const App = () => {
           welcomeSound();
         }, 2000);
       }, 2000);
-    }, 2000);
+    }, 900);
   };
 
   const oldThemeStyles = {
@@ -49,7 +64,7 @@ const App = () => {
     color: "#ddd",
     fontFamily: "Courier New, monospace", // Old font
     fontSize: "1.3rem", // Larger font
-    backgroundImage: "url('/31.jpg')", // Background image from the public folder
+    backgroundImage: "url('/main-bg.jpeg')", // Background image from the public folder
     backgroundSize: "cover", // Ensure the image covers the entire section
     backgroundPosition: "center", // Center the background image
     backgroundRepeat: "no-repeat", // Prevent the image from repeating
@@ -94,7 +109,7 @@ const App = () => {
     top: "10%",            // Adjusted to go further above the heading
     left: "50%",
     transform: "translateX(-50%)",
-    width: "500px",        // Set the width of the image
+    width: "520px",        // Set the width of the image
     height: "auto",       // Set the height of the image
     borderRadius: "50%",   // Makes the image rounded
     objectFit: "cover"   // Ensures the image covers the container without distortion
@@ -109,10 +124,12 @@ const App = () => {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1 }}
   style={{
-    fontSize: "2.5rem",
+    fontSize: "3.3rem",
     fontWeight: "bold",
     marginBottom: "1rem",
     marginTop: "7rem",
+    marginRight: "0.5rem",
+    marginLeft: "0.5rem",
     textShadow: "2px 2px 4px #000000",
     textAlign: "center",
     width: "100%",
@@ -130,7 +147,7 @@ const App = () => {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1, delay: 0.5 }}
   style={{
-    fontSize: "1.5rem",
+    fontSize: "2rem",
     marginBottom: "1rem",
     fontStyle: "italic",
     color: "#aaa",
@@ -147,7 +164,7 @@ const App = () => {
                 whileTap={{ scale: 0.9 }}
                 style={{
                   padding: "0.75rem 1.5rem",
-                  backgroundColor: "#6A0DAD", // Purple color for the button
+                  backgroundColor: "#000", // Purple color for the button
                   color: "#fff",
                   borderRadius: "0.5rem",
                   fontSize: "1.2rem",
