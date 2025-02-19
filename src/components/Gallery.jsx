@@ -43,7 +43,7 @@ const Gallery = () => {
   }, [images.length]);
 
   return (
-    <Section>
+    <Section id="gallery">
       <center>
         <h4 className="h4 mb-12 text-4xl text-white-500">TRIP DOWN THE MEMORY LANE!</h4>
       </center>

@@ -6,7 +6,7 @@ import smallimg from "../assets/4-small.png";
 
 const ImpetusEvents = ({ heading, paragraph }) => {
   return (
-    <Section>
+    <Section id="events">
       <section className="flex justify-center py-10">
         <motion.div
           className="relative bg-[#1c0532] text-white py-12 px-8 w-[90%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] rounded-tl-3xl rounded-tr-xl rounded-bl-xl rounded-br-3xl shadow-xl transform skew-y-2"

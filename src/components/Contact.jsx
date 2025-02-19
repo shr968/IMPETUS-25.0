@@ -5,7 +5,7 @@ import { grid } from "../assets";
 
 const Contact = () => {
   return (
-    <Section className="relative text-white py-20 overflow-hidden">
+    <Section className="relative text-white py-20 overflow-hidden" id="contact">
       <Gradient />
 
       {/* Updated Grid Background */}

@@ -25,7 +25,7 @@ const Hero = () => {
 
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            IEEE UVCE PRESENTS ANNUAL NATIONAL-LEVEL <br /> TECHNICAL EXTRAVAGANZA
+            IEEE UVCE PRESENTS ANNUAL NATIONAL-LEVEL <br /> TECHNICAL STUDENT EXTRAVAGANZA
           </p>
           <h1 className="h1 mb-6 text-7xl md:text-5xl lg:text-9xl">
             <span className="inline-block relative">

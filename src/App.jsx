@@ -62,14 +62,18 @@ const App = () => {
   const oldThemeStyles = {
     backgroundColor: "#222",
     color: "#ddd",
-    fontFamily: "Courier New, monospace", // Old font
-    fontSize: "1.3rem", // Larger font
-    backgroundImage: "url('/main-bg.jpeg')", // Background image from the public folder
-    backgroundSize: "cover", // Ensure the image covers the entire section
-    backgroundPosition: "center", // Center the background image
-    backgroundRepeat: "no-repeat", // Prevent the image from repeating
+    fontFamily: "Courier New, monospace",
+    fontSize: "1.3rem",
+    backgroundImage: "url('/main-bg.jpeg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
     overflow: "hidden",
+    width: "100vw",   
+    height: "100vh",  
+    position: "fixed", 
   };
+  
   const backgroundOverlay = {
     content: '""',
     position: "absolute",
