@@ -64,7 +64,7 @@ const App = () => {
     color: "#ddd",
     fontFamily: "Courier New, monospace",
     fontSize: "1.3rem",
-    backgroundImage: "url('/main-bg.jpeg')",
+    backgroundImage: "url('/main-bg.webp')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
