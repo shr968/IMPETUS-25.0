@@ -25,8 +25,8 @@ const Stats = () => {
   };
 
   useEffect(() => {
-    countUp(0, 19, 9000, setEvents);
-    countUp(0, 40, 9000, setParticipants);
+    countUp(0, 23, 9000, setEvents);
+    countUp(0, 2249, 9000, setParticipants);
     countUp(0, 55000, 9000, setPrizePool);
   }, []);
 
