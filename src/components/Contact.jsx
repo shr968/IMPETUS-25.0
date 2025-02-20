@@ -38,18 +38,22 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="contact-info ml-15 mt-20">
-              <h2 className="text-2xl font-bold mb-4 text-white-800">Contact Information</h2>
-              <p className="text-lg mb-2 text-white-700">
-                <strong>Mohammed Saad</strong> - +91 74063 81301
-              </p>
-              <p className="text-lg mb-2 text-white-700">
-                <strong>Swapna P Hiremath</strong> - +91 63600 66916
-              </p>
-              <p className="text-lg mb-2 text-white-700">
-                <strong>V P Charan</strong> - +91 81230 01489
-              </p>
-            </div>
+            {/* Contact Information */}
+<div className="contact-info ml--5 mt-10 px-4 sm:px-8 md:px-0">
+  <h2 className="text-2xl font-bold mb-4 text-white-800 text-center md:text-left">Contact Information</h2>
+  <div className="space-y-2 text-center md:text-left">
+    <p className="text-lg mb-2 text-white-700">
+      <strong>Mohammed Saad</strong> - +91 74063 81301
+    </p>
+    <p className="text-lg mb-2 text-white-700">
+      <strong>Swapna P Hiremath</strong> - +91 63600 66916
+    </p>
+    <p className="text-lg mb-2 text-white-700">
+      <strong>V P Charan</strong> - +91 81230 01489
+    </p>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
