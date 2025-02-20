@@ -12,7 +12,7 @@ const Roadmap = () => (
       <Heading tag="" title="ABOUT IEEE UVCE" className="text-center"/>
 
       <div className="relative mb-8 p-6 rounded-xl backdrop-blur-md">
-        <p className="text-n-4 body-1 text-justify">
+        <p className="text-[#e8e8e8] text-n-4 body-1 text-justify">
         IEEE UVCE is an IEEE student branch at the University of Visvesvaraya College of Engineering, under the aegis of the IEEE Bangalore Section. Started in 2001, IEEE UVCE is dedicated to spreading knowledge through a variety of activities. The branch provides students with opportunities to attend global and national IEEE workshops, symposiums, guest lectures, and conferences. It also supports various technical interest groups, offering guidance and a nurturing platform for students. IEEE UVCE enriches students' experiences with social, cultural, and technical events, encourages the use of IEEE membership benefits, and promotes collaboration with the global IEEE community. It has become one of the most recognized student branches in IEEE Region 10.
 
 This year is particularly special as IEEE UVCE celebrates its Silver Jubilee, marking 25 years of fostering innovation, professional growth, and academic excellence among students. To commemorate this milestone, a series of special events and activities are planned. This year aims to honour the legacy of IEEE UVCE and its impact on countless students' lives, highlighting the achievements of its members and their contributions to the engineering field. The Silver Jubilee is a testament to the branch's enduring commitment to excellence and its pivotal role in shaping future engineers.
@@ -56,7 +56,7 @@ This year is particularly special as IEEE UVCE celebrates its Silver Jubilee, ma
                     />
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
-                  <p className="body-2 text-n-4">{item.text}</p>
+                  <p className=" text-[#e8e8e8] body-2 text-n-4 text-justify">{item.text}</p>
                 </div>
               </div>
             </div>
