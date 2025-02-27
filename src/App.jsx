@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
 import Footer from "./components/Footer";
@@ -13,6 +14,8 @@ import Stats from "./components/Stats"
 import Events from "./components/Events"
 import Contact from "./components/Contact"
 import Gallery from "./components/Gallery"
+import EventsPage from "./components/EventsPage"
+import AboutTheme from "./components/Theme"
 
 const App = () => {
   const [showApp, setShowApp] = useState(false);
@@ -262,6 +265,7 @@ const App = () => {
           <Header />
           <Hero />
           <Roadmap />
+          <AboutTheme/>
           <Stats />
           <Events />
           <Gallery />
