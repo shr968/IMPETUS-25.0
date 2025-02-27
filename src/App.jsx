@@ -16,6 +16,7 @@ import Contact from "./components/Contact"
 import Gallery from "./components/Gallery"
 import EventsPage from "./components/EventsPage"
 import AboutTheme from "./components/Theme"
+import Sponsors from "./components/Sponsors"
 
 const App = () => {
   const [showApp, setShowApp] = useState(false);
@@ -269,6 +270,7 @@ const App = () => {
           <Stats />
           <Events />
           <Gallery />
+          <Sponsors/>
           <Contact />
           <Footer />
         </motion.div>
