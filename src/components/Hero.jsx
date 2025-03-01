@@ -59,7 +59,6 @@ const Hero = () => {
     
      <br />
      <Gradient/>
-     <BackgroundCircles/>
     </Section>
     
   );

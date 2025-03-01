@@ -1,5 +1,6 @@
 import Section from "./Section"
 import { Gradient } from "./design/Services";
+
 const AboutTheme = () => {
     return (
         <Section>
@@ -22,6 +23,7 @@ const AboutTheme = () => {
             <strong>"Legacy Rebooted"</strong> is not just a theme; it's a mindset. It's about respecting our roots while embracing the possibilities of tomorrow. It's about harnessing the power of technology, creativity, and collaboration to create a brighter, more sustainable future.
           </p>
         </div>
+       
       </section>
        <Gradient />
       </Section>
