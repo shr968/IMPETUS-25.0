@@ -108,7 +108,7 @@ export const roadmap = [
   {
     id: "2",
     title: "GENERAL EVENTS",
-    text: "IMPETUS is not just about our flagship events - we also welcome outside teams and individuals to organize events that align with our mission and values. These events are a great opportunity for the wider community to get involved with IMPETUS and showcase their skills and creativity. For IMPETUS 24.0, we have a wide range of exciting events planned that are sure to appeal to a diverse audience. Gear up and get involved - whether you're a developer, entrepreneur, tech enthusiastic, or just someone who loves to have fun, there's a place for you at IMPETUS 24.0!",
+    text: "IMPETUS is not just about our flagship events - we also welcome outside teams and individuals to organize events that align with our mission and values. These events are a great opportunity for the wider community to get involved with IMPETUS and showcase their skills and creativity. For IMPETUS 25.0, we have a wide range of exciting events planned that are sure to appeal to a diverse audience. Gear up and get involved - whether you're a developer, entrepreneur, tech enthusiastic, or just someone who loves to have fun, there's a place for you at IMPETUS 25.0!",
     date: "May 2023",
     imageUrl: roadmap3,
     colorful: true,
