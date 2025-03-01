@@ -48,7 +48,7 @@ const ImpetusEvents = ({ heading, paragraph }) => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
           >
-            <Button className="px-8 py-4 text-lg rounded-lg shadow-lg font-semibold hover:scale-105 transition-transform duration-300">
+            <Button href = "https://impetus-events.vercel.app/" className="px-8 py-4 text-lg rounded-lg shadow-lg font-semibold hover:scale-105 transition-transform duration-300">
               SHOW ALL EVENTS
             </Button>
           </motion.div>
