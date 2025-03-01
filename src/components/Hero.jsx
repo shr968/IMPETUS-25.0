@@ -27,11 +27,12 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             IEEE UVCE PRESENTS ANNUAL NATIONAL-LEVEL <br /> TECHNICAL STUDENT EXTRAVAGANZA
           </p>
-          <h1 className="h1 mb-6 text-7xl md:text-5xl lg:text-9xl">
-            <span className="inline-block relative">
-              IMPETUS 25.0
-            </span>
-          </h1>
+          <h1 className="h1 mb-6 text-7xl md:text-5xl lg:text-9xl font-daggersquare">
+  <span className="inline-block relative">
+    IMPETUS 25.0
+  </span>
+</h1>
+
           
           <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
             <Button href="https://impetus-events.vercel.app/" className="text-2xl" >REGISTER FOR EVENTS</Button>

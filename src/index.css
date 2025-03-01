@@ -13,6 +13,18 @@
   color-scheme: dark;
 }
 
+@font-face {
+  font-family: "DaggerSquare";
+  src: url("/fonts/daggersquare.regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-daggersquare {
+  font-family: "DaggerSquare", sans-serif;
+}
+
+
 * {
   scroll-behavior: smooth
 }
