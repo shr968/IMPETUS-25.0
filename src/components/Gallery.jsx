@@ -75,40 +75,51 @@ const Gallery = () => {
       </div>
 
       {/* Lightbox Modal */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
-          onClick={closeLightbox}
+      {/* Lightbox Modal */}
+{isOpen && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+    onClick={closeLightbox} // Clicking outside closes the modal
+  >
+    <div
+      className="relative max-w-3xl mx-auto p-4 bg-black rounded-lg"
+      onClick={(e) => e.stopPropagation()} // Prevents lightbox from closing when clicking inside
+    >
+      <button
+        className="absolute top-4 right-4 text-white text-xl font-bold"
+        onClick={closeLightbox}
+      >
+        ×
+      </button>
+      <img
+        src={images[currentIndex]}
+        alt={`Lightbox Image ${currentIndex + 1}`}
+        className="max-w-full h-auto rounded-lg shadow-xl"
+      />
+      <div className="flex justify-between mt-4">
+        <button
+          className="px-4 py-2 bg-gray-600 text-white rounded-lg"
+          onClick={(e) => {
+            e.stopPropagation(); // Prevents closing when clicking this button
+            prevImage();
+          }}
         >
-          <div className="relative max-w-3xl mx-auto p-4 bg-white rounded-lg">
-            <button
-              className="absolute top-4 right-4 text-white text-xl font-bold"
-              onClick={closeLightbox}
-            >
-              ×
-            </button>
-            <img
-              src={images[currentIndex]}
-              alt={`Lightbox Image ${currentIndex + 1}`}
-              className="max-w-full h-auto rounded-lg shadow-xl"
-            />
-            <div className="flex justify-between mt-4">
-              <button
-                className="px-4 py-2 bg-gray-600 text-white rounded-lg"
-                onClick={prevImage}
-              >
-                Prev
-              </button>
-              <button
-                className="px-4 py-2 bg-gray-600 text-white rounded-lg"
-                onClick={nextImage}
-              >
-                Next
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+          Prev
+        </button>
+        <button
+          className="px-4 py-2 bg-gray-600 text-white rounded-lg"
+          onClick={(e) => {
+            e.stopPropagation(); // Prevents closing when clicking this button
+            nextImage();
+          }}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
     </Section>
   );
 };
