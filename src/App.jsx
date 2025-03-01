@@ -17,6 +17,9 @@ import Gallery from "./components/Gallery"
 import EventsPage from "./components/EventsPage"
 import AboutTheme from "./components/Theme"
 import Sponsors from "./components/Sponsors"
+import { BackgroundCircles } from "./components/design/Hero";
+import { Rings } from "./components/design/Header";
+import PricingList from "./components/PricingList";
 
 const App = () => {
   const [showApp, setShowApp] = useState(false);

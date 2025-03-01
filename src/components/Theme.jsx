@@ -1,4 +1,5 @@
 import Section from "./Section"
+import { Gradient } from "./design/Services";
 const AboutTheme = () => {
     return (
         <Section>
@@ -22,7 +23,9 @@ const AboutTheme = () => {
           </p>
         </div>
       </section>
+       <Gradient />
       </Section>
+       
     );
   };
   

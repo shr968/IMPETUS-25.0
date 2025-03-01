@@ -9,7 +9,7 @@ const Sponsors = () => {
     ];
   
     return (
-        <Section>
+        <Section className="pt-16" id="sponsors">
       <section className="text-white py-16 px-6 md:px-20 lg:px-40">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">

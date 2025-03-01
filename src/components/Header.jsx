@@ -35,9 +35,9 @@ const Header = () => {
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4 text-3xl">
+      <div className="flex items-center px-10 lg:px-10 xl:px-10 max-lg:py-4 text-3xl">
         <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img src={ieee} width={70} height={35} alt="Brainwave" />
+          <img src={ieee} width={70} height={25} alt="Brainwave" />
         </a>
 
         <nav
@@ -69,8 +69,8 @@ const Header = () => {
         </nav>
 
         
-        <Button className="hidden lg:flex text-3xl" href="#login">
-          REGISTER NOW
+        <Button className="hidden lg:flex text-2xl" href="#contact">
+          Contact Us
         </Button>
 
         <Button

@@ -4,8 +4,9 @@ import Section from "./Section";
 import { BottomLine } from "./design/Hero";
 import { useRef } from "react";
 import { BackgroundCircles } from "./design/Hero";
-import { Gradient } from "./design/Roadmap";
+import { Gradient } from "./design/Services";
 import { grid } from "../assets";
+
 const Hero = () => {
   const parallaxRef = useRef(null);
 
@@ -57,6 +58,8 @@ const Hero = () => {
 
     
      <br />
+     <Gradient/>
+     <BackgroundCircles/>
     </Section>
     
   );
