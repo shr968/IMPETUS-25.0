@@ -24,6 +24,7 @@ import astro from "./hero/astro.jpg";
 import ieee from "./hero/ieee1.png";
 import aboutimpetus from "../assets/aboutimpetus.png";
 import flagship from "../assets/flagship.png";
+import impetuslogo from "../assets/impetuslogo.png";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.png";
@@ -152,4 +153,5 @@ export {
   ieee,
   aboutimpetus,
   flagship,
+  impetuslogo,
 };
