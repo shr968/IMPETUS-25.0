@@ -35,7 +35,7 @@ const Hero = () => {
           <img 
             src={impetuslogo} 
             alt="IMPETUS 25.0 Logo" 
-            className="mx-auto w-64 md:w-80 lg:w-96" 
+            className="block mx-auto w-64 md:w-80 lg:w-96" 
           />
 
           {/*
