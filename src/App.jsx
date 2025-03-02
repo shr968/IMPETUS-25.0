@@ -273,7 +273,7 @@ const App = () => {
           <Stats />
           <Events />
           <Gallery />
-          <Sponsors/>
+          
           <Contact />
           <Footer />
         </motion.div>

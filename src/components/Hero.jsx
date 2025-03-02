@@ -35,15 +35,21 @@ const Hero = () => {
 </h1>
 
           
-          <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-            <Button href="https://impetus-events.vercel.app/" className="text-2xl" >REGISTER FOR EVENTS</Button>
-          </div>
-          <br />
-          <div>
-            <Button href="/roadmap" className="text-2xl">ALL IN ONE PASS</Button>
-          </div>
-         
-        </div>
+          {/* 
+<div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
+  <Button href="https://impetus-events.vercel.app/" className="text-2xl">
+    REGISTER FOR EVENTS
+  </Button>
+</div>
+<br />
+<div>
+  <Button href="/roadmap" className="text-2xl">ALL IN ONE PASS</Button>
+</div>
+*/}
+    </div>
+
+    <br />
+    <br />
         
             
 
