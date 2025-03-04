@@ -20,6 +20,7 @@ import Sponsors from "./components/Sponsors"
 import { BackgroundCircles } from "./components/design/Hero";
 import { Rings } from "./components/design/Header";
 import PricingList from "./components/PricingList";
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   const [showApp, setShowApp] = useState(false);
@@ -279,6 +280,7 @@ const App = () => {
         </motion.div>
       )}
       <ButtonGradient />
+      <Analytics/>
     </>
   );
 };
