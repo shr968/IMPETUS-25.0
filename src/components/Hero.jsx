@@ -32,18 +32,20 @@ const Hero = () => {
             </span>
           </h1>
           {/* Logo and Buttons Container */}
-          <div className="flex items-center justify-center gap-8 flex-wrap md:flex-nowrap">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <img 
               src={impetuslogo} 
               alt="IMPETUS 25.0 Logo" 
-              className="block mx-auto w-64 md:w-80 lg:w-96 relative -mt-4" 
+              className="block mx-auto w-48 sm:w-64 md:w-80 lg:w-96 relative -mt-4" 
             />
-            <div className="flex flex-col gap-4">
-              <Button href="https://impetus-events.vercel.app/" className="text-2xl">
+            <div className="flex flex-col gap-4 w-full md:w-auto">
+              <Button 
+                href="https://impetus-events.vercel.app/" 
+                className="text-lg sm:text-xl md:text-2xl px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 w-full md:w-auto text-center"
+              >
                 REGISTER FOR EVENTS
               </Button>
-             {/* <Button href="/roadmap" className="text-2xl">ALL IN ONE PASS</Button> */}
-
+              {/* <Button href="/roadmap" className="text-2xl">ALL IN ONE PASS</Button> */}
             </div>
           </div>
         </div>
