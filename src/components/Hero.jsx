@@ -31,33 +31,27 @@ const Hero = () => {
               IMPETUS 25.0
             </span>
           </h1>
-          {/* Logo Code */}
-          <img 
-            src={impetuslogo} 
-            alt="IMPETUS 25.0 Logo" 
-            className="block mx-auto w-64 md:w-80 lg:w-96" 
-          />
+          {/* Logo and Buttons Container */}
+          <div className="flex items-center justify-center gap-8 flex-wrap md:flex-nowrap">
+            <img 
+              src={impetuslogo} 
+              alt="IMPETUS 25.0 Logo" 
+              className="block mx-auto w-64 md:w-80 lg:w-96 relative -mt-4" 
+            />
+            <div className="flex flex-col gap-4">
+              <Button href="https://impetus-events.vercel.app/" className="text-2xl">
+                REGISTER FOR EVENTS
+              </Button>
+             {/* <Button href="/roadmap" className="text-2xl">ALL IN ONE PASS</Button> */}
 
-          {/*
-          <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-            <Button href="https://impetus-events.vercel.app/" className="text-2xl">
-              REGISTER FOR EVENTS
-            </Button>
+            </div>
           </div>
-          <br />
-          <div>
-            <Button href="/roadmap" className="text-2xl">ALL IN ONE PASS</Button>
-          </div>
-          */}
         </div>
-
         
-
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]" />
         </div>
       </div>
-
       <br />
       <Gradient/>
     </Section>
