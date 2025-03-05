@@ -5,12 +5,18 @@ import { socials } from "../constants";
 const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10">
-      <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
-        <p className="caption text-n-4 lg:block">
-          © {new Date().getFullYear()}. Software Development SIG, IEEE UVCE.
+      <div className="container flex flex-col items-center text-center gap-5">
+        <p className="caption text-n-4">
+          © {new Date().getFullYear()}. All Rights Reserved.
         </p>
+        <p className="caption text-n-4">Developed by Software Development SIG</p>
+        
+        <div className="flex justify-center gap-16">
+          <p className="caption text-n-4"><span className="font-bold">Shreya Nayak B</span>, Secretary, SDSIG</p>
+          <p className="caption text-n-4"><span className="font-bold">V Sanjay</span>, Secretary, SDSIG</p>
+        </div>
 
-        <ul className="flex gap-5 flex-wrap">
+        <ul className="flex gap-5 flex-wrap justify-center">
           {socials.map((item) => (
             <a
               key={item.id}
