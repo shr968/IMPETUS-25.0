@@ -45,7 +45,8 @@ const Hero = () => {
               >
                 REGISTER FOR EVENTS
               </Button>
-              {/* <Button href="/roadmap" className="text-2xl">ALL IN ONE PASS</Button> */}
+              
+              <Button href="https://unstop.com/p/all-in-one-pass-impetus-250-university-visvesvaraya-college-of-engineering-uvce-bangalore-1426030" className="text-lg sm:text-xl md:text-2xl px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 w-full md:w-auto text-center">ALL IN ONE PASS</Button>
             </div>
           </div>
         </div>
