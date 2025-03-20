@@ -1,40 +1,36 @@
-import Section from "./Section"
+import Section from "./Section";
+import myEquationImage from "../assets/images/MyEquation.jpg";
+
 const Sponsors = () => {
-    const sponsors = [
-      { title: "General Sponsor" },
-      { title: "Silver Sponsor" },
-      { title: "Gold Sponsor" },
-      { title: "Platinum Sponsor" },
-      { title: "Diamond Sponsor" },
-    ];
-  
-    return (
-        <Section className="pt-16" id="sponsors">
+  const sponsors = [
+    {
+      title: "MyEquation - Official Industrial Partner",
+      image: myEquationImage,
+      website: "https://myequation.in/"
+    }
+  ];
+
+  return (
+    <Section className="pt-16" id="sponsors">
       <section className="text-white py-16 px-6 md:px-20 lg:px-40">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Our Sponsors
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Sponsors</h2>
+          <div className="flex justify-center">
             {sponsors.map((sponsor, index) => (
-              <div key={index} className="bg-gray-p-6 rounded-lg shadow-lg text-center">
-                <div className="w-full h-32 bg-gray-600 flex items-center justify-center rounded-md mb-4">
-                  <span className="text-gray-400">Image Placeholder</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3">
-                  {sponsor.title}
-                </h3>
-                <button className="px-4 py-2 text-gray-700 font-semibold rounded-md">
-                  View Website
-                </button>
+              <div key={index} className="bg-[#140521] p-0 rounded-lg shadow-lg text-center overflow-hidden w-64 h-72 flex flex-col items-center shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+                <a href={sponsor.website} target="_blank" rel="noopener noreferrer" className="w-full h-3/4">
+                  <img src={sponsor.image} alt={sponsor.title} className="w-full h-full object-cover" />
+                </a>
+                <a href={sponsor.website} target="_blank" rel="noopener noreferrer" className="text-white mt-5 underline no-underline">
+                Visit Website
+                </a>
               </div>
             ))}
           </div>
         </div>
-      </section><br/><br/>
-      </Section>
-    );
-  };
-  
-  export default Sponsors;
-  
+      </section>
+    </Section>
+  );
+};
+
+export default Sponsors;
