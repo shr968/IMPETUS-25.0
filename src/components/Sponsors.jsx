@@ -9,6 +9,7 @@ import pazoImage from "../assets/images/pazo.jpg";
 import techserImage from "../assets/images/techser2.jpg";
 import ieeeImage from "../assets/images/ieeebangaloresection2.jpg";
 import gailImage from "../assets/images/gail.jpg";
+import uvcefoundation from "../assets/images/uvcefoundation (2).jpg"
 
 const sponsors = [
   { title: "GAIL GAS - Silver Sponsor", image: gailImage, website: "https://gailgas.com/home", description: "GAIL Gas Limited is a subsidiary of GAIL (India) Limited, a government-owned natural gas company in India. It focuses on City Gas Distribution (CGD), supplying piped natural gas (PNG) to households, industries, and commercial establishments, as well as compressed natural gas (CNG) for vehicles.GAIL Gas operates in multiple cities across India, promoting clean energy solutions and reducing dependence on traditional fossil fuels. It plays a key role in India’s push for sustainable energy and a greener future." },
@@ -19,7 +20,8 @@ const sponsors = [
   { title: "Wonderwoman Wednesday - General Sponsor", image: wonderwomanImage, website: "https://wonderwomanwednesday.com/", description: "A platform celebrating and empowering women through insightful content and initiatives." },
   { title: "Pazo - General Sponsor", image: pazoImage, website: "https://www.gopazo.com/", description: "Pazo streamlines business operations with automation and real-time reporting solutions." },
   { title: "Techser - General Sponsor", image: techserImage, website: "https://techser.com/", description: "Techser offers IT infrastructure and networking solutions for businesses of all sizes." },
-  { title: "IEEE Bangalore Section - General Sponsor", image: ieeeImage, website: "https://ieeebangalore.org/", description: "IEEE Bangalore Section promotes technological advancements and professional networking." }
+  { title: "IEEE Bangalore Section - General Sponsor", image: ieeeImage, website: "https://ieeebangalore.org/", description: "IEEE Bangalore Section promotes technological advancements and professional networking." },
+  { title: "UVCE Foundation - General Sponsor", image: uvcefoundation, website: "https://www.uvcefoundation.org/", description: "To foster, maintain and support lifelong relationships by engaging its worldwide community of alumni, students, and well-wishers with UVCE and each other so as to encourage the philanthropic and volunteer support that will advance the mission of the institution." }
 ];
 
 const Sponsors = () => {
@@ -52,7 +54,7 @@ const Sponsors = () => {
           <div className="bg-[#140521] p-6 rounded-lg text-white max-w-lg text-center relative">
             <button className="absolute top-3 right-3 text-2xl" onClick={() => setSelectedSponsor(null)}>×</button>
             <h3 className="text-xl font-bold mb-2">{selectedSponsor.title}</h3>
-            <p className="text-sm mb-4">{selectedSponsor.description}</p>
+            <p className="text-sm mb-4 text-justify">{selectedSponsor.description}</p>
             <a href={selectedSponsor.website} target="_blank" rel="noopener noreferrer" className="text-white no-underline">Visit Website</a>
           </div>
         </div>
