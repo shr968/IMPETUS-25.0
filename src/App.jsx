@@ -21,6 +21,7 @@ import { BackgroundCircles } from "./components/design/Hero";
 import { Rings } from "./components/design/Header";
 import PricingList from "./components/PricingList";
 import { Analytics } from "@vercel/analytics/react"
+import {Helmet} from 'react-helmet';
 
 const App = () => {
   const [showApp, setShowApp] = useState(false);
@@ -105,6 +106,17 @@ const App = () => {
 
   return (
     <>
+    <Helmet>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YHK49CYNL"></script>
+     <script>
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4YHK49CYNL');
+  `}
+</script>
+    </Helmet>
       {!showApp ? (
         <div
           className="flex flex-col items-center justify-center h-screen"
