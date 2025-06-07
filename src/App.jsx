@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
 import Footer from "./components/Footer";
@@ -21,7 +22,7 @@ import { BackgroundCircles } from "./components/design/Hero";
 import { Rings } from "./components/design/Header";
 import PricingList from "./components/PricingList";
 import { Analytics } from "@vercel/analytics/react"
-import {Helmet} from 'react-helmet';
+import ReactGA from "react-ga4";
 
 const App = () => {
   const [showApp, setShowApp] = useState(false);
@@ -30,6 +31,15 @@ const App = () => {
   const [mainSound]=useSound("/main.mp3");
   const [welcomeSound] = useSound("/sounds/welcome.mp3");
   const [tickSound] = useSound("/sounds/tick.mp3");
+  const location = useLocation();
+useEffect(() => {
+  ReactGA.initialize("G-4YHK49CYNL");
+}, []);
+
+useEffect(() => {
+  ReactGA.send({ hitType: "pageview", page: location.pathname });
+}, [location]);
+
   useEffect(() => {
     mainSound(); // Play main sound when component mounts
   }, [mainSound]);
@@ -53,6 +63,11 @@ const App = () => {
   const handleReboot = () => {
     setIsOldTheme(false); // Switch to new theme
     setBooting(true);
+    ReactGA.event({
+  category: "Button",
+  action: "Click",
+  label: "Reboot Button"
+});
     rebootSound();
     setTimeout(() => {
       setInitializationComplete(true);
@@ -106,17 +121,6 @@ const App = () => {
 
   return (
     <>
-    <Helmet>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YHK49CYNL"></script>
-     <script>
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4YHK49CYNL');
-  `}
-</script>
-    </Helmet>
       {!showApp ? (
         <div
           className="flex flex-col items-center justify-center h-screen"
